@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Fullmetal Alchemist</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="../index.html">FMA</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="producoes.html">Produções</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria-hero">
+            <h1>Galeria</h1>
+            <p>Uma seleção de momentos marcantes da série</p>
+        </section>
+
+        <section class="galeria-filtros">
+            <button class="filtro-btn active" data-filter="todos">Todos</button>
+            <button class="filtro-btn" data-filter="personagens">Personagens</button>
+            <button class="filtro-btn" data-filter="cenas">Cenas</button>
+            <button class="filtro-btn" data-filter="alquimia">Alquimia</button>
+        </section>
+
+        <section class="galeria-grid">
+            <div class="galeria-item personagens">
+                <img src="../img/galeria/edward-elric.jpg" alt="Edward Elric">
+                <div class="galeria-overlay">
+                    <h3>Edward Elric</h3>
+                    <p>O Alquimista de Aço em ação</p>
+                </div>
+            </div>
+
+            <div class="galeria-item cenas">
+                <img src="../img/galeria/transmutacao.jpg" alt="Círculo de Transmutação">
+                <div class="galeria-overlay">
+                    <h3>Transmutação</h3>
+                    <p>O poder da alquimia em ação</p>
+                </div>
+            </div>
+
+            <div class="galeria-item personagens">
+                <img src="../img/galeria/alphonse.jpg" alt="Alphonse Elric">
+                <div class="galeria-overlay">
+                    <h3>Alphonse Elric</h3>
+                    <p>A alma presa na armadura</p>
+                </div>
+            </div>
+
+            <div class="galeria-item alquimia">
+                <img src="../img/galeria/pedra-filosofal.jpg" alt="Pedra Filosofal">
+                <div class="galeria-overlay">
+                    <h3>Pedra Filosofal</h3>
+                    <p>O objeto mais poderoso da alquimia</p>
+                </div>
+            </div>
+
+            <div class="galeria-item cenas">
+                <img src="../img/galeria/batalha.jpg" alt="Cena de Batalha">
+                <div class="galeria-overlay">
+                    <h3>Confronto</h3>
+                    <p>Um dos momentos mais épicos da série</p>
+                </div>
+            </div>
+
+            <div class="galeria-item alquimia">
+                <img src="../img/galeria/circulo-transmutacao.jpg" alt="Círculo de Transmutação Complexo">
+                <div class="galeria-overlay">
+                    <h3>Arte da Alquimia</h3>
+                    <p>Os complexos círculos de transmutação</p>
+                </div>
+            </div>
+
+            <div class="galeria-item personagens">
+                <img src="../img/galeria/roy-mustang.jpg" alt="Roy Mustang">
+                <div class="galeria-overlay">
+                    <h3>Roy Mustang</h3>
+                    <p>O Alquimista das Chamas</p>
+                </div>
+            </div>
+
+            <div class="galeria-item cenas">
+                <img src="../img/galeria/central-city.jpg" alt="Central City">
+                <div class="galeria-overlay">
+                    <h3>Central City</h3>
+                    <p>A capital de Amestris</p>
+                </div>
+            </div>
+
+            <div class="galeria-item personagens">
+                <img src="../img/galeria/homunculus.jpg" alt="Os Homunculus">
+                <div class="galeria-overlay">
+                    <h3>Homunculus</h3>
+                    <p>Os sete pecados capitais</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" class="lightbox-content">
+            <div class="lightbox-caption"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fullmetal Alchemist Fan Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>
