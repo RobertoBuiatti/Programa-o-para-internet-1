@@ -7,53 +7,52 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    padding: 100px 20px;
+    margin-bottom: 80px;
 }
 
 .personagens-hero h1 {
-    color: var(--white);
+    color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeInDown 1s ease-out;
+    font-size: 48px;
+    margin-bottom: 16px;
 }
 
 .personagens-hero p {
-    color: var(--white);
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    color: #FFFFFF;
+    font-size: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     margin: 0 auto;
-    animation: fadeInUp 1s ease-out 0.3s;
-    animation-fill-mode: both;
 }
 
 /* Grid de Personagens */
 .personagens-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-    padding: 0 var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+    margin-bottom: 80px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Cards dos Personagens */
 .character-card {
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
+    background: linear-gradient(145deg, #333333, #1A1A1A);
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.character-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    position: relative;
+    display: block;
 }
 
 .character-image {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* Proporção 1:1 */
+    padding-top: 100%;
     overflow: hidden;
 }
 
@@ -64,86 +63,30 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.character-card:hover .character-image img {
-    transform: scale(1.05);
 }
 
 .character-info {
-    padding: var(--spacing-md);
-    border-top: 4px solid var(--primary-red);
+    padding: 20px;
+    border-top: 4px solid #CC0000;
+    position: relative;
+    z-index: 2;
 }
 
 .character-info h2 {
-    color: var(--primary-red);
-    font-size: clamp(1.3rem, 2vw, 1.8rem);
-    margin-bottom: var(--spacing-xs);
+    color: #CC0000;
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
 .character-info h3 {
-    color: var(--white);
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #FFFFFF;
+    font-size: 20px;
     opacity: 0.9;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 16px;
 }
 
 .character-info p {
-    color: var(--white);
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: #FFFFFF;
     opacity: 0.8;
     line-height: 1.6;
-}
-
-/* Animações */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-    .personagens-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .personagens-hero {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
-
-    .personagens-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: var(--spacing-md);
-        padding: 0 var(--spacing-sm);
-    }
-}
-
-@media (max-width: 480px) {
-    .character-card {
-        margin: 0 var(--spacing-xs);
-    }
-
-    .character-info {
-        padding: var(--spacing-sm);
-    }
 }

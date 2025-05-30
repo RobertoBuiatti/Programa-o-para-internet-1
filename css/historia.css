@@ -7,24 +7,21 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    padding: 8vw 2vw;
+    margin-bottom: 8vw;
 }
 
 .historia-hero h1 {
-    color: var(--white);
+    color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeInDown 1s ease-out;
 }
 
 .historia-hero p {
-    color: var(--white);
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    color: #FFFFFF;
+    font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     margin: 0 auto;
-    animation: fadeInUp 1s ease-out 0.3s;
-    animation-fill-mode: both;
 }
 
 /* Timeline */
@@ -32,14 +29,14 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: 8vw 2vw;
 }
 
 .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: var(--primary-red);
+    background-color: #CC0000;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -52,7 +49,7 @@
     position: relative;
     width: 50%;
     box-sizing: border-box;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: 8vw;
 }
 
 .timeline-item::after {
@@ -61,8 +58,8 @@
     width: 25px;
     height: 25px;
     right: -12px;
-    background-color: var(--dark-gray);
-    border: 4px solid var(--primary-red);
+    background-color: #1A1A1A;
+    border: 4px solid #CC0000;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -81,8 +78,8 @@
 }
 
 .timeline-content {
-    padding: var(--spacing-md);
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
+    padding: 2vw;
+    background: linear-gradient(145deg, #333333, #1A1A1A);
     border-radius: 12px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -94,13 +91,13 @@
 }
 
 .timeline-content h2 {
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-sm);
+    color: #CC0000;
+    margin-bottom: 1vw;
 }
 
 .timeline-content p {
-    color: var(--white);
-    margin-bottom: var(--spacing-md);
+    color: #FFFFFF;
+    margin-bottom: 2vw;
     line-height: 1.6;
 }
 
@@ -124,31 +121,31 @@
 
 /* Mundo da Alquimia */
 .mundo-alquimia {
-    padding: var(--spacing-xl) var(--spacing-md);
-    background-color: var(--dark-gray);
+    padding: 8vw 2vw;
+    background-color: #1A1A1A;
 }
 
 .mundo-alquimia h2 {
-    color: var(--primary-red);
+    color: #CC0000;
     text-align: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 4vw;
 }
 
 .alquimia-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .alquimia-item {
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
-    padding: var(--spacing-md);
+    background: linear-gradient(145deg, #333333, #1A1A1A);
+    padding: 2vw;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    border-left: 4px solid var(--primary-red);
+    border-left: 4px solid #CC0000;
 }
 
 .alquimia-item:hover {
@@ -156,76 +153,12 @@
 }
 
 .alquimia-item h3 {
-    color: var(--white);
-    margin-bottom: var(--spacing-sm);
+    color: #FFFFFF;
+    margin-bottom: 1vw;
 }
 
 .alquimia-item p {
-    color: var(--white);
+    color: #FFFFFF;
     opacity: 0.8;
     line-height: 1.6;
-}
-
-/* Animações */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .timeline::after {
-        left: 31px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .timeline-item.right {
-        left: 0;
-    }
-
-    .timeline-item::after {
-        left: 19px;
-        right: auto;
-    }
-
-    .alquimia-grid {
-        grid-template-columns: 1fr;
-        padding: 0 var(--spacing-sm);
-    }
-}
-
-@media (max-width: 480px) {
-    .timeline-content {
-        padding: var(--spacing-sm);
-    }
-
-    .timeline-image {
-        height: 150px;
-    }
-
-    .mundo-alquimia {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
 }

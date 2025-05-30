@@ -7,149 +7,153 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    padding: 6rem 2rem;
+    margin-bottom: 4rem;
 }
 
 .contato-hero h1 {
-    color: var(--white);
+    color: #FFFFFF;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeInDown 1s ease-out;
+    margin-bottom: 1rem;
 }
 
 .contato-hero p {
-    color: var(--white);
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    color: #FFFFFF;
+    font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     margin: 0 auto;
-    animation: fadeInUp 1s ease-out 0.3s;
-    animation-fill-mode: both;
 }
 
 /* Grid de Contato */
 .contato-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: var(--spacing-xl);
+    gap: 4rem;
     max-width: 1200px;
-    margin: 0 auto var(--spacing-xl);
-    padding: 0 var(--spacing-md);
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
 }
 
 /* Informações de Contato */
 .contato-info {
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
-    padding: var(--spacing-lg);
+    background: linear-gradient(145deg, #333333, #1A1A1A);
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contato-info h2 {
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-lg);
+    color: #CC0000;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
 .info-items {
     display: grid;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .info-item {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: 1rem;
 }
 
 .info-item .icon {
     font-size: 1.8rem;
-    color: var(--primary-red);
+    color: #CC0000;
     min-width: 40px;
     text-align: center;
 }
 
 .info-content h3 {
-    color: var(--white);
-    margin-bottom: var(--spacing-xs);
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .info-content p {
-    color: var(--white);
+    color: #FFFFFF;
     opacity: 0.9;
-    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    font-size: 1rem;
 }
 
 /* Redes Sociais */
 .redes-sociais h3 {
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-md);
+    color: #CC0000;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-sm);
+    gap: 1rem;
 }
 
 .social-link {
-    background-color: var(--medium-gray);
-    color: var(--white);
-    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
-    background-color: var(--primary-red);
+    background-color: #CC0000;
     transform: translateY(-2px);
 }
 
 /* Formulário de Contato */
 .contato-form {
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
-    padding: var(--spacing-lg);
+    background: linear-gradient(145deg, #333333, #1A1A1A);
+    padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .form-header {
     text-align: center;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 2rem;
 }
 
 .form-header h2 {
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-xs);
+    color: #CC0000;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
 }
 
 .form-header p {
-    color: var(--white);
+    color: #FFFFFF;
     opacity: 0.9;
+    font-size: 1.1rem;
 }
 
 .form-group {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
-    color: var(--white);
-    margin-bottom: var(--spacing-xs);
-    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: var(--spacing-sm);
-    background-color: var(--dark-gray);
-    border: 2px solid var(--medium-gray);
+    padding: 0.8rem;
+    background-color: #1A1A1A;
+    border: 2px solid #333333;
     border-radius: 8px;
-    color: var(--white);
-    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    color: #FFFFFF;
+    font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
@@ -157,7 +161,7 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-red);
+    border-color: #CC0000;
 }
 
 .form-group textarea {
@@ -167,74 +171,18 @@
 
 .btn-submit {
     width: 100%;
-    padding: var(--spacing-md);
-    background-color: var(--primary-red);
-    color: var(--white);
+    padding: 1rem;
+    background-color: #CC0000;
+    color: #FFFFFF;
     border: none;
     border-radius: 8px;
-    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: var(--secondary-red);
+    background-color: #8B0000;
     transform: translateY(-2px);
-}
-
-/* Animações */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-    .contato-grid {
-        gap: var(--spacing-lg);
-    }
-}
-
-@media (max-width: 768px) {
-    .contato-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contato-info,
-    .contato-form {
-        padding: var(--spacing-md);
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .form-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .info-item {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--spacing-xs);
-    }
 }

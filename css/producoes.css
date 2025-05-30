@@ -7,42 +7,39 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    padding: 8vw 2vw;
+    margin-bottom: 8vw;
 }
 
 .producoes-hero h1 {
-    color: var(--white);
+    color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: fadeInDown 1s ease-out;
 }
 
 .producoes-hero p {
-    color: var(--white);
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    color: #FFFFFF;
+    font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     margin: 0 auto;
-    animation: fadeInUp 1s ease-out 0.3s;
-    animation-fill-mode: both;
 }
 
 /* Seção de Comparação */
 .comparacao {
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: 8vw 2vw;
 }
 
 .anime-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-xl);
+    gap: 8vw;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 /* Cards dos Animes */
 .anime-card {
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
+    background: linear-gradient(145deg, #333333, #1A1A1A);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -54,9 +51,9 @@
 }
 
 .anime-header {
-    padding: var(--spacing-md);
-    background-color: var(--primary-red);
-    color: var(--white);
+    padding: 2vw;
+    background-color: #CC0000;
+    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,11 +61,11 @@
 
 .anime-header h2 {
     margin: 0;
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-size: 1.8rem;
 }
 
 .ano {
-    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    font-size: 1.1rem;
     opacity: 0.9;
 }
 
@@ -90,11 +87,11 @@
 }
 
 .anime-info {
-    padding: var(--spacing-md);
+    padding: 2vw;
 }
 
 .info-item {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 2vw;
 }
 
 .info-item:last-child {
@@ -102,41 +99,41 @@
 }
 
 .info-item h3 {
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-xs);
-    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    color: #CC0000;
+    margin-bottom: 0.5vw;
+    font-size: 1.3rem;
 }
 
 .info-item p {
-    color: var(--white);
+    color: #FFFFFF;
     opacity: 0.9;
     line-height: 1.6;
 }
 
 /* Seção de Diferenças */
 .diferencas {
-    padding: var(--spacing-xl) var(--spacing-md);
-    background-color: var(--dark-gray);
+    padding: 8vw 2vw;
+    background-color: #1A1A1A;
 }
 
 .diferencas h2 {
     text-align: center;
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-xl);
+    color: #CC0000;
+    margin-bottom: 8vw;
 }
 
 .diferencas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .diferenca-item {
-    background: linear-gradient(145deg, var(--medium-gray), var(--dark-gray));
+    background: linear-gradient(145deg, #333333, #1A1A1A);
     border-radius: 12px;
-    padding: var(--spacing-md);
+    padding: 2vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
@@ -146,93 +143,32 @@
 }
 
 .diferenca-item h3 {
-    color: var(--primary-red);
-    margin-bottom: var(--spacing-md);
+    color: #CC0000;
+    margin-bottom: 2vw;
     text-align: center;
 }
 
 .comparacao-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
 }
 
 .versao {
-    padding: var(--spacing-sm);
+    padding: 1vw;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
 
 .versao h4 {
-    color: var(--white);
-    margin-bottom: var(--spacing-xs);
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    color: #FFFFFF;
+    margin-bottom: 0.5vw;
+    font-size: 1.2rem;
 }
 
 .versao p {
-    color: var(--white);
+    color: #FFFFFF;
     opacity: 0.8;
-    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    font-size: 1rem;
     line-height: 1.5;
-}
-
-/* Animações */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries */
-@media (max-width: 1024px) {
-    .anime-grid {
-        gap: var(--spacing-lg);
-    }
-}
-
-@media (max-width: 768px) {
-    .anime-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .comparacao-box {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-sm);
-    }
-
-    .anime-image {
-        height: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    .anime-header {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--spacing-xs);
-    }
-
-    .anime-image {
-        height: 200px;
-    }
-
-    .diferenca-item {
-        padding: var(--spacing-sm);
-    }
 }

@@ -10,11 +10,13 @@
 </head>
 <body>
     <header>
-        <nav class="nav-container">
+        <nav>
             <div class="logo">
-                <a href="../index.html">FMA</a>
+                <a href="../index.html">
+                    <img src="../img/logo/logo.gif" alt="Logo Fullmetal Alchemist">
+                </a>
             </div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="personagens.html">Personagens</a></li>
                 <li><a href="historia.html">História</a></li>
@@ -40,14 +42,14 @@
                         <span class="icon">✉</span>
                         <div class="info-content">
                             <h3>Email</h3>
-                            <p>contato@fmasite.com</p>
+                            <p>roberto.buiatti@estudante.iftm.edu.br</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <span class="icon">☎</span>
                         <div class="info-content">
                             <h3>Telefone</h3>
-                            <p>(11) 99999-9999</p>
+                            <p>(34) 8922-9999</p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -71,7 +73,7 @@
             </div>
 
             <div class="contato-form">
-                <form id="form-contato">
+                <form action="#" method="post">
                     <div class="form-header">
                         <h2>Envie sua Mensagem</h2>
                         <p>Preencha o formulário abaixo para entrar em contato conosco</p>
@@ -79,14 +81,12 @@
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" required
-                               placeholder="Digite seu nome completo">
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required
-                               placeholder="Digite seu email">
+                        <input type="email" id="email" name="email" required placeholder="Digite seu email">
                     </div>
 
                     <div class="form-group">
@@ -102,14 +102,11 @@
 
                     <div class="form-group">
                         <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" required
-                                  placeholder="Digite sua mensagem"></textarea>
+                        <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn-submit">
-                            Enviar Mensagem
-                        </button>
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
                     </div>
                 </form>
             </div>
@@ -119,9 +116,5 @@
     <footer>
         <p>&copy; 2024 Fullmetal Alchemist Fan Site. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="../js/main.js"></script>
-    <script src="../js/scroll.js"></script>
-    <script src="../js/contato.js"></script>
 </body>
 </html>
