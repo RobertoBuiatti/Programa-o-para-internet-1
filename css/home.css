@@ -103,3 +103,25 @@
     color: #FFFFFF;
     opacity: 0.8;
 }
+
+/* Link Escondido */
+.hidden-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+.hidden-link:hover {
+    color: #cc0000;
+}
+
+.hidden-link:hover::before {
+    content: "Não abra";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #cc0000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transform: translateY(-25px);
+}
