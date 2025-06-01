@@ -1,10 +1,10 @@
-.personagem-detalhes {
+.detalhes-personagem {
     padding: 32px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.personagem-detalhes h1 {
+.detalhes-personagem h1 {
     color: #ffd700;
     font-size: 40px;
     text-align: center;
@@ -12,7 +12,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.personagem-info {
+.info-personagem {
     display: flex;
     gap: 32px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -21,7 +21,7 @@
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
-.personagem-info img {
+.info-personagem img {
     width: 400px;
     height: auto;
     border-radius: 10px;

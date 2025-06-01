@@ -1,7 +1,4 @@
-/* Estilos da Página Inicial */
-
-/* Seção Hero */
-.hero {
+.heroi {
     display: grid;
     place-items: center;
     min-height: 80vh;
@@ -13,35 +10,34 @@
     text-align: center;
 }
 
-.hero-content {
+.conteudo-heroi {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.hero h1 {
+.heroi h1 {
     color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 2vw;
 }
 
-.hero p {
+.heroi p {
     font-size: 1.3rem;
     color: #FFFFFF;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin-bottom: 4vw;
 }
 
-/* Seção Features */
-.features {
+.recursos {
     padding: 8vw 0;
 }
 
-.features .grid-container {
+.recursos .container-grade {
     grid-template-columns: repeat(3, 1fr);
     gap: 4vw;
 }
 
-.feature-card {
+.cartao-recurso {
     background-color: #333333;
     padding: 2vw;
     border-radius: 8px;
@@ -50,21 +46,20 @@
     cursor: pointer;
 }
 
-.feature-card:hover {
+.cartao-recurso:hover {
     transform: translateY(-5px);
 }
 
-.feature-card h2 {
+.cartao-recurso h2 {
     color: #CC0000;
     margin-bottom: 1vw;
 }
 
-.feature-card p {
+.cartao-recurso p {
     color: #FFFFFF;
     opacity: 0.9;
 }
 
-/* Seção Destaques */
 .destaques {
     padding: 8vw 0;
     background-color: #1A1A1A;
@@ -104,18 +99,17 @@
     opacity: 0.8;
 }
 
-/* Link Escondido */
-.hidden-link {
+.link-oculto {
     text-decoration: none;
     color: inherit;
     cursor: default;
 }
 
-.hidden-link:hover {
+.link-oculto:hover {
     color: #cc0000;
 }
 
-.hidden-link:hover::before {
+.link-oculto:hover::before {
     content: "Não abra";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.9);

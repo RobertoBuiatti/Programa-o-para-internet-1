@@ -1,7 +1,4 @@
-/* Estilos da Página de Curiosidades */
-
-/* Hero Section */
-.curiosidades-hero {
+.heroi-curiosidades {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('../img/background/curiosidades-bg.jpg');
     background-size: cover;
@@ -11,12 +8,12 @@
     margin-bottom: 8vw;
 }
 
-.curiosidades-hero h1 {
+.heroi-curiosidades h1 {
     color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.curiosidades-hero p {
+.heroi-curiosidades p {
     color: #FFFFFF;
     font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -24,8 +21,7 @@
     margin: 0 auto;
 }
 
-/* Grid de Curiosidades */
-.curiosidades-grid {
+.grade-curiosidades {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4vw;
@@ -34,8 +30,7 @@
     margin: 0 auto 8vw;
 }
 
-/* Cards de Curiosidades */
-.curiosidade-card {
+.cartao-curiosidade {
     background: linear-gradient(145deg, #333333, #1A1A1A);
     border-radius: 12px;
     overflow: hidden;
@@ -43,11 +38,11 @@
     transition: transform 0.3s ease;
 }
 
-.curiosidade-card:hover {
+.cartao-curiosidade:hover {
     transform: translateY(-10px);
 }
 
-.card-header {
+.cabecalho-cartao {
     background-color: #CC0000;
     padding: 2vw;
     display: flex;
@@ -62,36 +57,35 @@
     opacity: 0.8;
 }
 
-.card-header h2 {
+.cabecalho-cartao h2 {
     color: #FFFFFF;
     margin: 0;
     font-size: 1.5rem;
 }
 
-.card-content {
+.conteudo-cartao {
     padding: 2vw;
 }
 
-.card-content p {
+.conteudo-cartao p {
     color: #FFFFFF;
     opacity: 0.9;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Seção Trivia */
-.trivia-section {
+.secao-trivia {
     padding: 8vw 2vw;
     background-color: #1A1A1A;
 }
 
-.trivia-section h2 {
+.secao-trivia h2 {
     text-align: center;
     color: #CC0000;
     margin-bottom: 8vw;
 }
 
-.trivia-grid {
+.grade-trivia {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4vw;
@@ -99,7 +93,7 @@
     margin: 0 auto;
 }
 
-.trivia-item {
+.item-trivia {
     background: linear-gradient(145deg, #333333, #1A1A1A);
     padding: 2vw;
     border-radius: 12px;
@@ -108,34 +102,33 @@
     border-left: 4px solid #CC0000;
 }
 
-.trivia-item:hover {
+.item-trivia:hover {
     transform: translateY(-5px);
 }
 
-.trivia-item h3 {
+.item-trivia h3 {
     color: #CC0000;
     margin-bottom: 1vw;
 }
 
-.trivia-item p {
+.item-trivia p {
     color: #FFFFFF;
     opacity: 0.9;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Easter Eggs Section */
-.easter-eggs {
+.ovos-pascoa {
     padding: 8vw 2vw;
 }
 
-.easter-eggs h2 {
+.ovos-pascoa h2 {
     text-align: center;
     color: #CC0000;
     margin-bottom: 8vw;
 }
 
-.easter-eggs-list {
+.lista-ovos-pascoa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4vw;
@@ -143,7 +136,7 @@
     margin: 0 auto;
 }
 
-.easter-egg {
+.ovo-pascoa {
     background: linear-gradient(145deg, #333333, #1A1A1A);
     padding: 2vw;
     border-radius: 12px;
@@ -151,16 +144,16 @@
     transition: transform 0.3s ease;
 }
 
-.easter-egg:hover {
+.ovo-pascoa:hover {
     transform: translateY(-5px);
 }
 
-.easter-egg h3 {
+.ovo-pascoa h3 {
     color: #CC0000;
     margin-bottom: 1vw;
 }
 
-.easter-egg p {
+.ovo-pascoa p {
     color: #FFFFFF;
     opacity: 0.9;
     line-height: 1.6;

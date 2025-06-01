@@ -1,7 +1,4 @@
-/* Estilos da Página de Contato */
-
-/* Hero Section */
-.contato-hero {
+.heroi-contato {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('../img/background/contato-bg.jpg');
     background-size: cover;
@@ -11,14 +8,14 @@
     margin-bottom: 4rem;
 }
 
-.contato-hero h1 {
+.heroi-contato h1 {
     color: #FFFFFF;
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
 }
 
-.contato-hero p {
+.heroi-contato p {
     color: #FFFFFF;
     font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -26,8 +23,7 @@
     margin: 0 auto;
 }
 
-/* Grid de Contato */
-.contato-grid {
+.grade-contato {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 4rem;
@@ -36,52 +32,50 @@
     padding: 0 2rem;
 }
 
-/* Informações de Contato */
-.contato-info {
+.info-contato {
     background: linear-gradient(145deg, #333333, #1A1A1A);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contato-info h2 {
+.info-contato h2 {
     color: #CC0000;
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
 
-.info-items {
+.itens-info {
     display: grid;
     gap: 1.5rem;
     margin-bottom: 3rem;
 }
 
-.info-item {
+.item-info {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.info-item .icon {
+.item-info .icone {
     font-size: 1.8rem;
     color: #CC0000;
     min-width: 40px;
     text-align: center;
 }
 
-.info-content h3 {
+.conteudo-info h3 {
     color: #FFFFFF;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
 
-.info-content p {
+.conteudo-info p {
     color: #FFFFFF;
     opacity: 0.9;
     font-size: 1rem;
 }
 
-/* Redes Sociais */
 .redes-sociais h3 {
     color: #CC0000;
     margin-bottom: 1.5rem;
@@ -108,45 +102,44 @@
     transform: translateY(-2px);
 }
 
-/* Formulário de Contato */
-.contato-form {
+.formulario-contato {
     background: linear-gradient(145deg, #333333, #1A1A1A);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.form-header {
+.cabecalho-formulario {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.form-header h2 {
+.cabecalho-formulario h2 {
     color: #CC0000;
     margin-bottom: 0.5rem;
     font-size: 1.8rem;
 }
 
-.form-header p {
+.cabecalho-formulario p {
     color: #FFFFFF;
     opacity: 0.9;
     font-size: 1.1rem;
 }
 
-.form-group {
+.grupo-formulario {
     margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.grupo-formulario label {
     display: block;
     color: #FFFFFF;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
     width: 100%;
     padding: 0.8rem;
     background-color: #1A1A1A;
@@ -154,22 +147,31 @@
     border-radius: 8px;
     color: #FFFFFF;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: visible;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.grupo-formulario input:hover,
+.grupo-formulario select:hover,
+.grupo-formulario textarea:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
     outline: none;
     border-color: #CC0000;
 }
 
-.form-group textarea {
+.grupo-formulario textarea {
     height: 150px;
     resize: vertical;
 }
 
-.btn-submit {
+.botao-enviar {
     width: 100%;
     padding: 1rem;
     background-color: #CC0000;
@@ -182,7 +184,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-submit:hover {
+.botao-enviar:hover {
     background-color: #8B0000;
     transform: translateY(-2px);
 }

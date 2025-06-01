@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navegacao-container">
             <div class="logo">
                 <a href="../index.html">
-                    <img src="../img/logo/logo.gif" alt="Logo Fullmetal Alchemist">
+                    <img src="../img/logo/logo.gif">
                 </a>
             </div>
-            <ul>
+            <ul class="links-navegacao">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="personagens.html">Personagens</a></li>
                 <li><a href="historia.html">História</a></li>
@@ -29,32 +29,32 @@
     </header>
 
     <main>
-        <section class="contato-hero">
+        <section class="heroi-contato">
             <h1>Entre em Contato</h1>
             <p>Compartilhe sua opinião sobre Fullmetal Alchemist</p>
         </section>
 
-        <section class="contato-grid">
-            <div class="contato-info">
+        <section class="grade-contato">
+            <div class="info-contato">
                 <h2>Informações de Contato</h2>
-                <div class="info-items">
-                    <div class="info-item">
-                        <span class="icon">✉</span>
-                        <div class="info-content">
+                <div class="itens-info">
+                    <div class="item-info">
+                        <span class="icone">✉</span>
+                        <div class="conteudo-info">
                             <h3>Email</h3>
                             <p>roberto.buiatti@estudante.iftm.edu.br</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <span class="icon">☎</span>
-                        <div class="info-content">
+                    <div class="item-info">
+                        <span class="icone">☎</span>
+                        <div class="conteudo-info">
                             <h3>Telefone</h3>
                             <p>(34) 8922-9999</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <span class="icon">📍</span>
-                        <div class="info-content">
+                    <div class="item-info">
+                        <span class="icone">📍</span>
+                        <div class="conteudo-info">
                             <h3>Localização</h3>
                             <p>Central City, Amestris</p>
                         </div>
@@ -72,24 +72,24 @@
                 </div>
             </div>
 
-            <div class="contato-form">
+            <div class="formulario-contato">
                 <form action="#" method="post">
-                    <div class="form-header">
+                    <div class="cabecalho-formulario">
                         <h2>Envie sua Mensagem</h2>
                         <p>Preencha o formulário abaixo para entrar em contato conosco</p>
                     </div>
 
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
                     </div>
 
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required placeholder="Digite seu email">
                     </div>
 
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="assunto">Assunto</label>
                         <select id="assunto" name="assunto" required>
                             <option value="">Selecione um assunto</option>
@@ -100,13 +100,13 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="mensagem">Mensagem</label>
                         <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    <div class="grupo-formulario">
+                        <button type="submit" class="botao-enviar">Enviar Mensagem</button>
                     </div>
                 </form>
             </div>

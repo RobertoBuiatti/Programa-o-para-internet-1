@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos base */
 html {
     font-size: 16px;
 }
@@ -19,7 +17,6 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-/* Tipografia responsiva */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 2vw;
@@ -41,7 +38,6 @@ p {
     margin-bottom: 1vw;
 }
 
-/* Links */
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -52,7 +48,6 @@ a:hover {
     color: #CC0000;
 }
 
-/* Layout principal */
 main {
     display: grid;
     grid-template-columns: minmax(5vw, 1fr) minmax(auto, 90vw) minmax(5vw, 1fr);
@@ -64,14 +59,12 @@ main > * {
     grid-column: 2;
 }
 
-/* Grid container global */
-.grid-container {
+.container-grade {
     display: grid;
     gap: 2vw;
     width: 100%;
 }
 
-/* Footer */
 footer {
     background-color: #333333;
     padding: 2vw;
@@ -79,8 +72,7 @@ footer {
     margin-top: auto;
 }
 
-/* Botões */
-.btn {
+.botao {
     display: inline-block;
     padding: 1vw 2vw;
     background-color: #CC0000;
@@ -91,12 +83,11 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.botao:hover {
     background-color: #8B0000;
 }
 
-/* Utilitários */
-.text-center {
+.texto-centro {
     text-align: center;
 }
 

@@ -1,7 +1,4 @@
-/* Estilos da Página de Galeria */
-
-/* Hero Section */
-.galeria-hero {
+.heroi-galeria {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('../img/background/galeria-bg.jpg');
     background-size: cover;
@@ -11,12 +8,12 @@
     margin-bottom: 8vw;
 }
 
-.galeria-hero h1 {
+.heroi-galeria h1 {
     color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.galeria-hero p {
+.heroi-galeria p {
     color: #FFFFFF;
     font-size: 1.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -24,8 +21,7 @@
     margin: 0 auto;
 }
 
-/* Filtros */
-.galeria-filtros {
+.filtros-galeria {
     display: flex;
     justify-content: center;
     gap: 1vw;
@@ -34,7 +30,7 @@
     padding: 0 2vw;
 }
 
-.filtro-btn {
+.botao-filtro {
     background-color: #333333;
     color: #FFFFFF;
     border: none;
@@ -45,17 +41,16 @@
     font-size: 1rem;
 }
 
-.filtro-btn:hover {
+.botao-filtro:hover {
     background-color: #CC0000;
     transform: translateY(-2px);
 }
 
-.filtro-btn.active {
+.botao-filtro.active {
     background-color: #CC0000;
 }
 
-/* Grid de Galeria */
-.galeria-grid {
+.grade-galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
@@ -64,8 +59,7 @@
     margin: 0 auto 8vw;
 }
 
-/* Itens da Galeria */
-.galeria-item {
+.item-galeria {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -75,14 +69,14 @@
     transition: transform 0.3s ease;
 }
 
-.galeria-item img {
+.item-galeria img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.galeria-overlay {
+.sobreposicao-galeria {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,32 +92,31 @@
     transition: opacity 0.3s ease;
 }
 
-.galeria-item:hover {
+.item-galeria:hover {
     transform: scale(1.02);
 }
 
-.galeria-item:hover img {
+.item-galeria:hover img {
     transform: scale(1.1);
 }
 
-.galeria-item:hover .galeria-overlay {
+.item-galeria:hover .sobreposicao-galeria {
     opacity: 1;
 }
 
-.galeria-overlay h3 {
+.sobreposicao-galeria h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5vw;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.galeria-overlay p {
+.sobreposicao-galeria p {
     font-size: 1rem;
     opacity: 0.9;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Lightbox */
-.lightbox {
+.caixa-luz {
     display: none;
     position: fixed;
     top: 0;
@@ -135,21 +128,21 @@
     padding: 2vw;
 }
 
-.lightbox.active {
+.caixa-luz.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.lightbox-content {
+.conteudo-caixa-luz {
     max-width: 90%;
     max-height: 80vh;
     object-fit: contain;
     border-radius: 8px;
 }
 
-.close-lightbox {
+.fechar-caixa-luz {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -159,11 +152,11 @@
     transition: transform 0.3s ease;
 }
 
-.close-lightbox:hover {
+.fechar-caixa-luz:hover {
     transform: scale(1.1);
 }
 
-.lightbox-caption {
+.legenda-caixa-luz {
     color: #FFFFFF;
     text-align: center;
     margin-top: 2vw;
